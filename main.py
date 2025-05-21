@@ -3,17 +3,13 @@ import pandas as pd
 import pickle
 import numpy as np
 import os
-from openai import OpenAI
-
+from groq import Groq
 import utils as ut
 
-# os.environ['KMP_DUPLICATE_LIB_OK']='True'
-api_key = st.secrets["api_key"]
+groq_api_key = st.secrets["api_key"]
 
-client = OpenAI(base_url="https://api.groq.com/openai/v1",
-                api_key=api_key)
+client = Groq(api_key=groq_api_key)
 
-# os.environ.get("GROQ_API_KEY")
 def load_model(filename):
   with open(filename, "rb") as file:
     return pickle.load(file)
