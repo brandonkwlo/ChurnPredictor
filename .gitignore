@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# macOS system files
+.DS_Store
+
+# Streamlit secrets and config
+.streamlit/secrets.toml
+
+# Model files (if you don't want to share trained models)
+app/models/*.pkl
+
+# Data files (if you don't want to share raw data)
+app/data/*.csv
+
+# Environment variable files
+.env
+
+# VSCode and other editor settings
+.vscode/
+.idea/
+
+# Log files
+*.log
+
+# Ignore test outputs
+htmlcov/
+coverage.xml
+*.cover
+*.py,cover
+
+# Ignore build artifacts
+build/
+dist/
+*.egg-info/ 
